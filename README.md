@@ -1,5 +1,7 @@
 # ShifterBit
 
+**a little bits compatible module that connects to shiftr.io**
+
 ## Materials
 
 - [ESP8266 Breakout](http://www.mouser.ch/ProductDetail/Adafruit/2471/?qs=sGAEpiMZZMuJ3l9lTgMBp%2frnoxsPagxMQVIxc1X%252bEHbnrRJkxRVMMQ%3d%3d)
