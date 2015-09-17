@@ -2,11 +2,16 @@
 
 **a little bits compatible module that connects to shiftr.io**
 
-## Materials
+## Parts
 
 - [ESP8266 Breakout](http://www.mouser.ch/ProductDetail/Adafruit/2471/?qs=sGAEpiMZZMuJ3l9lTgMBp%2frnoxsPagxMQVIxc1X%252bEHbnrRJkxRVMMQ%3d%3d)
 - [SD Card Holder](http://www.mouser.ch/ProductDetail/Molex/47352-1001/?qs=sGAEpiMZZMuJakaoiLiBpqoYXsE4YrD3r%2fU0grh%2fJ8Q%3d)
 - SD Card & Adapter
+
+## Useful Links
+
+- [Little Bits Eagle Templates](https://github.com/littleBitsbitLab/HDK-eagle-templates-libraries)
+- [ESP8266 Breakout Info](https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/overview)
 
 ## Configuration
 
