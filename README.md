@@ -11,6 +11,7 @@
 ## Useful Links
 
 - [Little Bits Eagle Templates](https://github.com/littleBitsbitLab/HDK-eagle-templates-libraries)
+- [SD Card Holder Eagle Part](http://www.eaglecentral.ca/forums/index.php?t=msg&th=48291&start=0&e7001add2d4226236598bac9739173f3)
 - [ESP8266 Breakout Info](https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/overview)
 
 ## Configuration
