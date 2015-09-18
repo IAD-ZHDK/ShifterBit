@@ -16,12 +16,21 @@
 
 ## Configuration
 
-To configure edit the `/arduino/config.txt`:
+To configure edit the `/config.txt` on the SD card:
 
 ```
+# Wifi Config
+wifi_ssid: MY_WIFI
+wifi_key: hidden_secret
+
+# MQTT Config
+mqtt_broker: broker.shiftr.io
 mqtt_user: try
 mqtt_password: try
 mqtt_client_id: bit1
-publish_topic: /data
-subscribe_topic: /data
+
+# Publish & Subscribe
+# set to '-' to disable
+publish_topic: data
+subscribe_topic: -
 ```
