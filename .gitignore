@@ -1,3 +1,4 @@
 # ignore eagle autosaves
 *.b#*
 *.s#*
+*.pro
