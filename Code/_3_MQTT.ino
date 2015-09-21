@@ -23,9 +23,8 @@ void mqtt_loop() {
 }
 
 void messageReceived(String topic, String payload, char * bytes, unsigned int length) {
-  Serial.print("incoming: ");
-  Serial.print(topic);
-  Serial.print(" - ");
-  Serial.print(payload);
-  Serial.println();
+  if(config_subscribe) {
+    display_touch_b();
+    // write pwm signal
+  }
 }
