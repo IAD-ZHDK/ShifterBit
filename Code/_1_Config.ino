@@ -64,11 +64,11 @@ void config_read_line(String c) {
    } else if(c.startsWith(_config_pt)) {
      String p = c.substring(colon + 2);
      p.toCharArray(config_publish_topic, 64);
-     config_publish = p.equals("-");
+     config_publish = !p.equals("-");
    } else if(c.startsWith(_config_st)) {
      String s = c.substring(colon + 2);
      s.toCharArray(config_subscribe_topic, 64);
-     config_subscribe = s.equals("-");
+     config_subscribe = !s.equals("-");
    }
 }
 
