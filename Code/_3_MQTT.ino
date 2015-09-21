@@ -1,4 +1,3 @@
-#include <ESP8266WiFi.h>
 #include <MQTTClient.h>
 
 WiFiClient mqtt_net;
