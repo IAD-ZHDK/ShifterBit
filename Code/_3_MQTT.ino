@@ -7,14 +7,14 @@ void mqtt_setup() {
   mqtt_client.begin(config_mqtt_broker, mqtt_net);
   
   Serial.println("Connecting to shiftr.io...");
-  if (mqtt_client.connect("arduino", "try", "try")) {
+  if (mqtt_client.connect(config_mqtt_client_id, config_mqtt_user, config_mqtt_password)) {
     Serial.println("Connected!");
 
     if(config_subscribe) {
       mqtt_client.subscribe(config_subscribe_topic);
     }
   } else {
-    Serial.println("Cot connected!");
+    Serial.println("Not connected!");
   }
 }
 
