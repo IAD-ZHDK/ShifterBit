@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 
-WiFiClient client;
+WiFiClient wifi_client;
 
 void wifi_setup() {
   Serial.print("Joining WiFi...");

@@ -1,10 +1,9 @@
 #include <MQTTClient.h>
 
-WiFiClient mqtt_net;
 MQTTClient mqtt_client;
 
 void mqtt_setup() {
-  mqtt_client.begin(config_mqtt_broker, mqtt_net);
+  mqtt_client.begin(config_mqtt_broker, wifi_client);
   
   Serial.println("Connecting to shiftr.io...");
   if (mqtt_client.connect(config_mqtt_client_id, config_mqtt_user, config_mqtt_password)) {
