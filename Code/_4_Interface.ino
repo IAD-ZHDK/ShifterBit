@@ -27,6 +27,6 @@ void interface_loop() {
 }
 
 void interface_out(int v) {
-  analogWrite(INTERFACE_OUT, v / 4);
+  analogWrite(INTERFACE_OUT, v);
 }
 
