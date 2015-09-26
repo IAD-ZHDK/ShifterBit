@@ -5,15 +5,15 @@ MQTTClient mqtt_client;
 void mqtt_setup() {
   mqtt_client.begin(config_mqtt_broker, wifi_client);
   
-  Serial.println("Connecting to shiftr.io...");
-  if (mqtt_client.connect(config_mqtt_client_id, config_mqtt_user, config_mqtt_password)) {
-    Serial.println("Connected!");
+  Serial.print("Connecting to shiftr.io...");
+  while (!mqtt_client.connect(config_mqtt_client_id, config_mqtt_user, config_mqtt_password)) {
+    Serial.print(".");
+  }
 
-    if(config_subscribe) {
-      mqtt_client.subscribe(config_subscribe_topic);
-    }
-  } else {
-    Serial.println("Not connected!");
+  Serial.println("\nConnected!");
+
+  if(config_subscribe) {
+    mqtt_client.subscribe(config_subscribe_topic);
   }
 }
 
