@@ -2176,6 +2176,11 @@ Lowpass Filter</text>
 <wire x1="33.02" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
 <label x="15.24" y="154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SD1" gate="A" pin="VSS"/>
+<wire x1="114.3" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<label x="127" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -2268,6 +2273,11 @@ Lowpass Filter</text>
 <wire x1="106.68" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
 <label x="88.9" y="114.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SD1" gate="A" pin="CLK"/>
+<wire x1="114.3" y1="40.64" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
+<label x="127" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D12" class="0">
 <segment>
@@ -2275,12 +2285,22 @@ Lowpass Filter</text>
 <wire x1="106.68" y1="111.76" x2="88.9" y2="111.76" width="0.1524" layer="91"/>
 <label x="88.9" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SD1" gate="A" pin="DAT0"/>
+<wire x1="114.3" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
+<label x="127" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D13" class="0">
 <segment>
 <pinref part="P1" gate="G$1" pin="7"/>
 <wire x1="106.68" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
 <label x="88.9" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SD1" gate="A" pin="CMD"/>
+<wire x1="114.3" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="127" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -2355,6 +2375,11 @@ Lowpass Filter</text>
 <wire x1="116.84" y1="109.22" x2="137.16" y2="109.22" width="0.1524" layer="91"/>
 <label x="134.62" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SD1" gate="A" pin="CD/DAT3"/>
+<wire x1="114.3" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<label x="127" y="48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3V" class="0">
 <segment>
@@ -2362,75 +2387,17 @@ Lowpass Filter</text>
 <wire x1="116.84" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
 <label x="134.62" y="106.68" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="LD0" class="0">
-<segment>
-<pinref part="P2" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
-<label x="134.62" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="SD1" gate="A" pin="CLK"/>
-<wire x1="114.3" y1="40.64" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
-<label x="127" y="40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="SD1" gate="A" pin="CMD"/>
-<wire x1="114.3" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
-<label x="127" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
 <segment>
 <pinref part="SD1" gate="A" pin="VDD"/>
 <wire x1="114.3" y1="43.18" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
 <label x="127" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="LD0" class="0">
 <segment>
-<pinref part="SD1" gate="A" pin="VSS"/>
-<wire x1="114.3" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
-<label x="127" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="SD1" gate="A" pin="DAT0"/>
-<wire x1="114.3" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
-<label x="127" y="35.56" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="SD1" gate="A" pin="DAT1"/>
-<wire x1="114.3" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
-<label x="127" y="33.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="SD1" gate="A" pin="CD"/>
-<wire x1="114.3" y1="25.4" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
-<label x="127" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="SD1" gate="A" pin="CD/DAT3"/>
-<wire x1="114.3" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
-<label x="127" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="SD1" gate="A" pin="DAT2"/>
-<wire x1="114.3" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
-<label x="127" y="50.8" size="1.778" layer="95"/>
+<pinref part="P2" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
+<label x="134.62" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
