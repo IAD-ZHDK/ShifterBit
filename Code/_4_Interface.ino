@@ -34,7 +34,12 @@ void interface_loop() {
 }
 
 void interface_out(int v) {
-  analogWrite(INTERFACE_OUT, v);
+  if(v == 0) {
+    analogWrite(INTERFACE_OUT, 0);
+    digitalWrite(INTERFACE_OUT, LOW); 
+  } else {
+    analogWrite(INTERFACE_OUT, v);  
+  }
 }
 
 int interface_filter(int v) {
