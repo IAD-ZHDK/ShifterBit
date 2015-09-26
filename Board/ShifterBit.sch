@@ -2075,7 +2075,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="2200"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="560"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="BC547"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1200"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1K2"/>
 </parts>
 <sheets>
 <sheet>
