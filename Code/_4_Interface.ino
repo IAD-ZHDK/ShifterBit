@@ -17,7 +17,8 @@ void interface_setup() {
 }
 
 void interface_loop() {
-  int v = interface_filter(analogRead(INTERACE_IN));
+  // the value should be between 0 and 1023
+  int v = interface_filter(analogRead(INTERACE_IN) - 1);
 
   if(v != interface_last_input) {
     if(millis() - INTERFACE_INTERVAL > interface_last_read) {
