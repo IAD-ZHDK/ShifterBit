@@ -34,9 +34,7 @@ const char * _config_st = "subscribe_topic: ";
 void config_setup() {
   SPI.begin();
   SD.begin(CONFIG_SS_PIN);
-}
 
-void config_read() {
   Serial.println("Read Config...");
   
   File fd = SD.open(CONFIG_FILE, FILE_READ);
@@ -44,6 +42,8 @@ void config_read() {
     config_read_line(fd.readStringUntil('\n'));
   }
   fd.close();
+
+  SPI.end();
 }
 
 void config_read_line(String c) {

@@ -6,7 +6,6 @@ void setup() {
 
   display_set(HIGH, LOW);
   config_setup();
-  config_read();
   config_print();
 
   display_set(HIGH, HIGH);
