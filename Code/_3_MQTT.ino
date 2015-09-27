@@ -24,6 +24,6 @@ void mqtt_loop() {
 void messageReceived(String topic, String payload, char * bytes, unsigned int length) {
   if(config_subscribe) {
     display_touch_out();
-    interface_out(payload.toInt());
+    output_set(payload.toInt());
   }
 }
