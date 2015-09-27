@@ -17,8 +17,7 @@ void interface_setup() {
 }
 
 void interface_loop() {
-  // the value should be between 0 and 1023
-  int v = interface_filter(analogRead(INTERACE_IN) - 1);
+  int v = interface_filter(analogRead(INTERACE_IN));
 
   if(v != interface_last_input) {
     if(millis() - INTERFACE_INTERVAL > interface_last_read) {
@@ -34,9 +33,10 @@ void interface_loop() {
 }
 
 void interface_out(int v) {
-  if(v == 0) {
-    analogWrite(INTERFACE_OUT, 0);
-    digitalWrite(INTERFACE_OUT, LOW); 
+  if(v <= 0) {
+    analogWrite(INTERFACE_OUT, 1);
+  } else if(v >= 1023) {
+    analogWrite(INTERFACE_OUT, 1023);
   } else {
     analogWrite(INTERFACE_OUT, v);  
   }
