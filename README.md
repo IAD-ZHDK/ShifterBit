@@ -6,6 +6,7 @@
 
 - [ESP8266 Breakout](http://www.mouser.ch/ProductDetail/Adafruit/2471/?qs=sGAEpiMZZMuJ3l9lTgMBp%2frnoxsPagxMQVIxc1X%252bEHbnrRJkxRVMMQ%3d%3d)
 - [SD Card Holder](http://www.mouser.ch/ProductDetail/Molex/47352-1001/?qs=sGAEpiMZZMuJakaoiLiBpqoYXsE4YrD3r%2fU0grh%2fJ8Q%3d)
+- [MCP41010](http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf)
 - SD Card & Adapter
 
 ## Useful Links
