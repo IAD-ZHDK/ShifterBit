@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="10" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -156,10 +156,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.01" y1="60.535" x2="0.01" y2="5.51" width="0" layer="20"/>
-<wire x1="0.01" y1="5.51" x2="2.61" y2="4.61" width="0" layer="20" curve="90"/>
-<wire x1="2.61" y1="4.61" x2="3.01" y2="4.61" width="0" layer="20"/>
-<wire x1="0.01" y1="60.535" x2="2.61" y2="64.635" width="0" layer="20" curve="-90"/>
+<wire x1="0.11" y1="62.035" x2="0.11" y2="6.81" width="0" layer="20"/>
+<wire x1="0.11" y1="6.81" x2="3.01" y2="4.61" width="0" layer="20" curve="90"/>
+<wire x1="0.11" y1="62.035" x2="2.61" y2="64.635" width="0" layer="20" curve="-90"/>
 <wire x1="2.61" y1="64.635" x2="3.01" y2="64.635" width="0" layer="20"/>
 <wire x1="23.41" y1="64.635" x2="23.81" y2="64.635" width="0" layer="20"/>
 <wire x1="23.81" y1="64.635" x2="26.31" y2="62.135" width="0" layer="20" curve="-90"/>
@@ -701,8 +700,8 @@ design rules under a new name.</description>
 </element>
 <element name="R2" library="SparkFun-Passives" package="0603-RES" value="56" x="9.3" y="60.3"/>
 <element name="R3" library="SparkFun-Passives" package="0603-RES" value="56" x="9" y="6.8"/>
-<element name="R4" library="SparkFun-Passives" package="0603-RES" value="2K2" x="22.5" y="61.2" rot="R180"/>
-<element name="R5" library="SparkFun-Passives" package="0603-RES" value="560" x="22.5" y="58.1"/>
+<element name="R4" library="SparkFun-Passives" package="0603-RES" value="3K3" x="22.5" y="61.2" rot="R180"/>
+<element name="R5" library="SparkFun-Passives" package="0603-RES" value="820" x="22.5" y="58.1"/>
 <element name="DPOT1" library="SparkFun-AnalogIC" package="SO08" value="MCP41XXX" x="13.2" y="21.8" rot="MR180"/>
 </elements>
 <signals>
@@ -741,7 +740,9 @@ design rules under a new name.</description>
 <contactref element="BSM1" pad="VCC1"/>
 <contactref element="BSF1" pad="VCC"/>
 <contactref element="DPOT1" pad="5"/>
+<contactref element="DPOT1" pad="8"/>
 <wire x1="15.105" y1="19.1838" x2="15.75" y2="66.635" width="0" layer="19" extent="16-16"/>
+<wire x1="11.295" y1="19.1838" x2="15.105" y2="19.1838" width="0" layer="19" extent="16-16"/>
 <wire x1="15.75" y1="3.44" x2="15.105" y2="19.1838" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SIG_OUT">
@@ -829,9 +830,7 @@ design rules under a new name.</description>
 <signal name="3V">
 <contactref element="P2" pad="3"/>
 <contactref element="SD1" pad="4"/>
-<contactref element="DPOT1" pad="8"/>
-<wire x1="11.295" y1="19.1838" x2="13" y2="40.5" width="0" layer="19" extent="1-16"/>
-<wire x1="23.9" y1="16.05" x2="11.295" y2="19.1838" width="0" layer="19" extent="16-16"/>
+<wire x1="23.9" y1="16.05" x2="13" y2="40.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LD0">
 <contactref element="P2" pad="2"/>
