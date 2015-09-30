@@ -1651,6 +1651,11 @@ Potentiometer</text>
 <wire x1="243.84" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
 <label x="223.52" y="132.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SD1" gate="A" pin="CD"/>
+<wire x1="144.78" y1="40.64" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
+<label x="157.48" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
