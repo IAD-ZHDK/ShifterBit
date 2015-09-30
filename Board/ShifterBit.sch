@@ -1704,13 +1704,6 @@ Potentiometer</text>
 <label x="43.18" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RST" class="0">
-<segment>
-<pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<label x="119.38" y="142.24" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="A1" class="0">
 <segment>
 <pinref part="P1" gate="G$1" pin="2"/>
@@ -1725,13 +1718,6 @@ Potentiometer</text>
 <wire x1="60.96" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
 <junction x="60.96" y="144.78"/>
 <label x="76.2" y="144.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="EN" class="0">
-<segment>
-<pinref part="P1" gate="G$1" pin="3"/>
-<wire x1="137.16" y1="137.16" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
-<label x="119.38" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D16" class="0">
@@ -1792,32 +1778,11 @@ Potentiometer</text>
 <label x="223.52" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V+" class="0">
-<segment>
-<pinref part="P1" gate="G$1" pin="8"/>
-<wire x1="137.16" y1="124.46" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
-<label x="119.38" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="P1" gate="G$1" pin="9"/>
 <wire x1="137.16" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
 <label x="119.38" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TX" class="0">
-<segment>
-<pinref part="P2" gate="G$1" pin="10"/>
-<wire x1="147.32" y1="142.24" x2="167.64" y2="142.24" width="0.1524" layer="91"/>
-<label x="165.1" y="142.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RX" class="0">
-<segment>
-<pinref part="P2" gate="G$1" pin="9"/>
-<wire x1="147.32" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
-<label x="165.1" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -1844,20 +1809,6 @@ Potentiometer</text>
 <label x="162.56" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D0" class="0">
-<segment>
-<pinref part="P2" gate="G$1" pin="6"/>
-<wire x1="147.32" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
-<label x="165.1" y="132.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D2" class="0">
-<segment>
-<pinref part="P2" gate="G$1" pin="5"/>
-<wire x1="147.32" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
-<label x="165.1" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="D15" class="0">
 <segment>
 <pinref part="P2" gate="G$1" pin="4"/>
@@ -1880,13 +1831,6 @@ Potentiometer</text>
 <pinref part="SD1" gate="A" pin="VDD"/>
 <wire x1="144.78" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
 <label x="157.48" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LD0" class="0">
-<segment>
-<pinref part="P2" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="121.92" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
-<label x="165.1" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
