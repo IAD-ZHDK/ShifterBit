@@ -13,7 +13,7 @@ void input_setup() {
 }
 
 void input_loop() {
-  int v = input_filter(analogRead(INTERACE_IN));
+  int v = input_filter(constrain(analogRead(INTERACE_IN), 0, 1023));
 
   if(v != input_last_input) {
     if(millis() - INPUT_INTERVAL > input_last_read) {
