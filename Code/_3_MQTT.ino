@@ -19,11 +19,12 @@ void mqtt_setup() {
 
 void mqtt_loop() {
   mqtt_client.loop();
+  delay(10);
 }
 
 void messageReceived(String topic, String payload, char * bytes, unsigned int length) {
   if(config_subscribe) {
     display_touch_out();
-    interface_out(payload.toInt());
+    output_set(payload.toInt());
   }
 }
