@@ -1711,7 +1711,7 @@ Potentiometer</text>
 <label x="119.38" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A" class="0">
+<net name="A1" class="0">
 <segment>
 <pinref part="P1" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>

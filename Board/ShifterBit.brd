@@ -760,7 +760,7 @@ design rules under a new name.</description>
 <signal name="RST">
 <contactref element="P1" pad="1"/>
 </signal>
-<signal name="A">
+<signal name="A1">
 <contactref element="P1" pad="2"/>
 <contactref element="R5" pad="2"/>
 <contactref element="R4" pad="1"/>
