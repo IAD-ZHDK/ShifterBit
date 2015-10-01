@@ -1,0 +1,12 @@
+Name;Type;Qty;Shop;Link;Stock;
+ESP 8266 ;Adafruit HUZZAH;16;Mouser;http://www.mouser.ch/ProductDetail/Adafruit/2471/?qs=GURawfaeGuAoxPWz4nSJYg%3d%3d;10;6
+microSD Card Holder;47352-1001;16;Farnell;http://ch.farnell.com/molex/4735-21001/steckplatz-micro-sd-8-positionen/dp/2424133;9;7
+Digital Potentiometer;MCP41010-I/SN;16;Farnell;http://ch.farnell.com/microchip/mcp41010-i-sn/digital-pot-spi-10k-41010-soic8/dp/9758607;;
+microSD Card + Adapter;;16;;;;16
+56 Resistor;RC1206FR-0756RL;32;;;32;
+1M Resistor;;16;;;16;
+1x10 Pinsockets;2212S-10SG-85;32;Farnell;http://ch.farnell.com/multicomp/2212s-10sg-85/buchse-lpt-1-reih-10kont/dp/1593464?ost=2212S-10SG-85;;32
+3K3 Resistor;;16;;;16;
+820 Resistor;;16;;;16;
+Green LED;;32;;;32;
+Pair of bitsnaps;;16;littlebits;;16;
