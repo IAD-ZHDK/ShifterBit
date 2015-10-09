@@ -1,0 +1,14 @@
+# Wifi Config
+wifi_ssid: BRIDGE
+wifi_key: internet
+
+# MQTT Config
+mqtt_broker: broker.shiftr.io
+mqtt_user: try
+mqtt_password: try
+mqtt_client_id: bit1
+
+# Publish & Subscribe
+# set to '-' to disable
+publish_topic: out
+subscribe_topic: in
