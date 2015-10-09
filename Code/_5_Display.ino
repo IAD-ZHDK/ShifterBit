@@ -1,6 +1,6 @@
 #define DISPLAY_DURATION 50
-#define DISPLAY_LED_IN 4
-#define DISPLAY_LED_OUT 5
+#define DISPLAY_LED_IN 5
+#define DISPLAY_LED_OUT 4
 
 bool display_in = false;
 bool display_out = false;
