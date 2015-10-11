@@ -6,7 +6,7 @@ wifi_key: internet
 mqtt_broker: broker.shiftr.io
 mqtt_user: try
 mqtt_password: try
-mqtt_client_id: bit1
+mqtt_client_id: shifter-bit
 
 # Publish & Subscribe
 # set to '-' to disable
