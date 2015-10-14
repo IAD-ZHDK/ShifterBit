@@ -2,6 +2,8 @@
 
 **a little bits compatible module that connects to shiftr.io**
 
+![Multiple ShifterBits](http://joel-github-static.s3.amazonaws.com/shifter-bit/teaser.jpg)
+
 ## Parts
 
 - [ESP8266 Breakout](http://www.mouser.ch/ProductDetail/Adafruit/2471/?qs=sGAEpiMZZMuJ3l9lTgMBp%2frnoxsPagxMQVIxc1X%252bEHbnrRJkxRVMMQ%3d%3d)
