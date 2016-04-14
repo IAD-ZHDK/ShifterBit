@@ -1,3 +1,14 @@
+// predefine functions
+void display_setup();
+void display_set(int, int);
+void wifi_setup();
+void mqtt_setup();
+void input_setup();
+void output_setup();
+void mqtt_loop();
+void input_loop();
+void display_loop();
+
 void setup() {
   Serial.begin(9600);
   Serial.println("\nStarting...");

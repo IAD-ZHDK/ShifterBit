@@ -1,6 +1,21 @@
+#include <ESP8266WiFi.h>
 #include <MQTTClient.h>
 
+WiFiClient wifi_client;
 MQTTClient mqtt_client;
+
+void wifi_setup() {
+  Serial.print("Joining WiFi...");
+  WiFi.begin(config_wifi_ssid, config_wifi_key);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.print("\nJoined with IP Address: ");  
+  Serial.println(WiFi.localIP());
+}
 
 void mqtt_setup() {
   mqtt_client.begin(config_mqtt_broker, wifi_client);
@@ -21,6 +36,10 @@ void mqtt_loop() {
   mqtt_client.loop();
   delay(10);
 }
+
+// predefine function
+void display_touch_out();
+void output_set(int);
 
 void messageReceived(String topic, String payload, char * bytes, unsigned int length) {
   if(config_subscribe) {

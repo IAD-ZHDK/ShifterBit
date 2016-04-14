@@ -12,6 +12,21 @@ void input_setup() {
   }
 }
 
+int input_filter(int v) {
+  for(int i=1; i < INPUT_HISTORY; i++) {
+    input_input_history[i - 1] = input_input_history[i];
+  }
+  
+  input_input_history[INPUT_HISTORY - 1] = v;
+
+  int sum = 0;
+  for(int j=0; j < INPUT_HISTORY; j++) {
+    sum += input_input_history[j];
+  }
+  
+  return sum / INPUT_HISTORY;
+}
+
 void input_loop() {
   int v = input_filter(constrain(analogRead(INTERACE_IN), 0, 1023));
 
@@ -28,17 +43,3 @@ void input_loop() {
   }
 }
 
-int input_filter(int v) {
-  for(int i=1; i < INPUT_HISTORY; i++) {
-    input_input_history[i - 1] = input_input_history[i];
-  }
-  
-  input_input_history[INPUT_HISTORY - 1] = v;
-
-  int sum = 0;
-  for(int j=0; j < INPUT_HISTORY; j++) {
-    sum += input_input_history[j];
-  }
-  
-  return sum / INPUT_HISTORY;
-}
