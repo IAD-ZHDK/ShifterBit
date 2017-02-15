@@ -1,6 +1,6 @@
 # ShifterBit
 
-**a little bits compatible module that connects to shiftr.io**
+**A [littleBits](http://littlebits.cc) compatible module that connects to [shiftr.io](https://shiftr.io)**
 
 ![Multiple ShifterBits](http://joel-github-static.s3.amazonaws.com/shifter-bit/teaser.jpg)
 
