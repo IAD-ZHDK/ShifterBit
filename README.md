@@ -19,7 +19,7 @@
 
 ## Configuration
 
-To configure edit the `/config.txt` on the SD card:
+To configure the bit, edit the `/config.txt` on the SD card:
 
 ```
 # Wifi Config
