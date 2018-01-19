@@ -1,4 +1,4 @@
-# ShifterBit
+# Shifter Bit
 
 **A [littleBits](http://littlebits.cc) compatible module that connects to [shiftr.io](https://shiftr.io).**
 
