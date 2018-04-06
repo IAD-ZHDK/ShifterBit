@@ -36,4 +36,7 @@ mqtt_client_id: bit1
 # set to '-' to disable
 publish_topic: data
 subscribe_topic: -
+
+# Uncomment to enable JSON
+# use_json
 ```

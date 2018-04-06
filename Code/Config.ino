@@ -21,6 +21,7 @@ bool config_publish = false;
 char config_publish_topic[64] = "";
 bool config_subscribe = false;
 char config_subscribe_topic[64] = "";
+bool config_json = false;
 
 const char * _config_ws = "wifi_ssid: ";
 const char * _config_wk = "wifi_key: ";
@@ -30,6 +31,7 @@ const char * _config_cp = "mqtt_password: ";
 const char * _config_ci = "mqtt_client_id: ";
 const char * _config_pt = "publish_topic: ";
 const char * _config_st = "subscribe_topic: ";
+const char * _config_js = "use_json";
 
 void config_setup() {
   SPI.begin();
@@ -69,6 +71,8 @@ void config_read_line(String c) {
      String s = c.substring(colon + 2);
      s.toCharArray(config_subscribe_topic, 64);
      config_subscribe = !s.equals("-");
+   } else if(c.startsWith(_config_js)) {
+      config_json = true;
    }
 }
 
@@ -89,5 +93,11 @@ void config_print() {
   Serial.println(config_publish_topic);
   Serial.print(_config_st);
   Serial.println(config_subscribe_topic);
+
+  if(config_json) {
+    Serial.println("json enabled");
+  } else {
+    Serial.println("json disabled");
+  }
 }
 

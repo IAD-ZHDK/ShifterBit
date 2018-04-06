@@ -36,8 +36,20 @@ void input_loop() {
       input_last_read = millis();
 
       if(config_publish) {
-        mqtt_client.publish(config_publish_topic, String(v));
         display_touch_in();
+
+        if(!config_json) {
+          mqtt_client.publish(config_publish_topic, String(v));
+          return;
+        }
+
+        const size_t bufferSize = JSON_OBJECT_SIZE(1);
+        DynamicJsonBuffer jsonBuffer(bufferSize);
+        JsonObject& root = jsonBuffer.createObject();
+        root["value"] = v;
+        String jsonOut;
+        root.printTo(jsonOut);
+        mqtt_client.publish(config_publish_topic, jsonOut);
       }
     }
   }

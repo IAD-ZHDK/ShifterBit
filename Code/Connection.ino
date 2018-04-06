@@ -1,5 +1,6 @@
 #include <ESP8266WiFi.h>
 #include <MQTTClient.h>
+#include <ArduinoJson.h>
 
 WiFiClient wifi_client;
 MQTTClient mqtt_client;
@@ -45,6 +46,15 @@ void output_set(int);
 void messageReceived(String &topic, String &payload) {
   if(config_subscribe) {
     display_touch_out();
-    output_set(payload.toInt());
+
+    if(!config_json) {
+      output_set(payload.toInt());
+      return;
+    }
+
+    const size_t bufferSize = JSON_OBJECT_SIZE(1) + 20;
+    DynamicJsonBuffer jsonBuffer(bufferSize);
+    JsonObject& root = jsonBuffer.parseObject(payload);
+    output_set(root["value"]);
   }
 }
