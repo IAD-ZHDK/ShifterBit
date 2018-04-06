@@ -19,6 +19,7 @@ void wifi_setup() {
 
 void mqtt_setup() {
   mqtt_client.begin(config_mqtt_broker, wifi_client);
+  mqtt_client.onMessage(messageReceived);
   
   Serial.print("Connecting to shiftr.io...");
   while (!mqtt_client.connect(config_mqtt_client_id, config_mqtt_user, config_mqtt_password)) {
@@ -41,7 +42,7 @@ void mqtt_loop() {
 void display_touch_out();
 void output_set(int);
 
-void messageReceived(String topic, String payload, char * bytes, unsigned int length) {
+void messageReceived(String &topic, String &payload) {
   if(config_subscribe) {
     display_touch_out();
     output_set(payload.toInt());
